@@ -14,14 +14,19 @@ then
 	echo "Der korrekte Aufruf lautet:"
 	echo "script13.sh Verzeichnis"
 else
+	cd $1
 	#Setze Counter auf 0
 	counter="0"
 	#Für jedes File in Parameter1
-	for fname in $1/*
+	for fname in *
 	do
 		#Setze Counter hoch
 		let counter=$counter+1
+		#Lese Filename heraus
+		filename=$(basename "$fname")
+		#Lese Fileextention aus
+		extention=${filename##*.}
 		#Benenne File um
-		mv $fname "$1/FILE000$counter"
+		mv $fname $(printf "FILE%0*d.%s" 4 $counter $extention)
 	done
 fi
