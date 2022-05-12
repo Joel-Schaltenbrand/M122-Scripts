@@ -1,10 +1,11 @@
 #!/bin/bash
 # Name:         script13
-# Aufruf:       script13.sh Verzeichnis
-# Beschreibung: Alle Daten werden umbenannt.
+# Aufruf:       script13.sh [<1. Parameter>]
+#							[<Verzeichnis>]
+# Beschreibung: Alle Daten werden umbenannt mit Fileextention.
 # Autor:        Joel Schaltenbrand
 # Version:      1
-# Datum:        05.05.2022
+# Datum:        12.05.2022
 
 #Wurden 1 Parameter übergeben?
 if [ $# -ne 1 ]
@@ -12,8 +13,9 @@ then
 	#Fehlermeldung anzeigen
 	echo "Es wurde nicht die korrekte Anzahl Parameter übergeben."
 	echo "Der korrekte Aufruf lautet:"
-	echo "script13.sh Verzeichnis"
+	echo "script13.sh <1. Parameter (Verzeichnis)>"
 else
+	#Gehe in Verzeichnis
 	cd $1
 	#Setze Counter auf 0
 	counter="0"
