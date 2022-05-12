@@ -12,12 +12,16 @@ then
 	#Fehlermeldung anzeigen
 	echo "Es wurde nicht die korrekte Anzahl Parameter übergeben."
 	echo "Der korrekte Aufruf lautet:"
-	echo "script12.sh Verzeichnis"
+	echo "script13.sh Verzeichnis"
 else
-	var counter=0
-	for fname in /l/
+	#Setze Counter auf 0
+	counter="0"
+	#Für jedes File in Parameter1
+	for fname in $1/*
 	do
+		#Setze Counter hoch
 		let counter=$counter+1
-		mv $fname "FILE$counter"
+		#Benenne File um
+		mv $fname "$1/FILE000$counter"
 	done
 fi
