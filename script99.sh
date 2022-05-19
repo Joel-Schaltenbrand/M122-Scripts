@@ -4,7 +4,7 @@
 #							[<Dateiname>]
 # Beschreibung: Kann eine Datei löschen, Schreibrecht, Ausführrecht geben oder sie umbenennen.
 # Autor:        Joel Schaltenbrand
-# Version:      1
+# Version:      2
 # Datum:        19.05.2022
 
 #Wurden 1 Parameter übergeben?
