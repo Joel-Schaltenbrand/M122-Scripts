@@ -2,7 +2,7 @@
 # Name:         script13
 # Aufruf:       script13.sh [<1. Parameter>]
 #							[<Verzeichnis>]
-# Beschreibung: Alle Daten werden umbenannt mit Fileextention.
+# Beschreibung: Alle Daten werden umbenannt mit Fileextentions.
 # Autor:        Joel Schaltenbrand
 # Version:      1
 # Datum:        12.05.2022
