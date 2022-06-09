@@ -1,0 +1,3 @@
+/usr/share/applications/gedit.desktop
+/usr/share/applications/org.gnome.gedit.desktop
+/usr/share/app-install/desktop/gedit:gedit.desktop
